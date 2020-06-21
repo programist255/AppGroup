@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b8e6"
+    tools:context=".AddTaskGroup">
+
+    <RelativeLayout
+        android:id="@+id/RL_GR"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/B_Back_to_group3"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:id="@+id/NameGroups3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="NameGroup"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#85000000" />
+    </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ImageViewTask"-->
+<!--        android:layout_width="191dp"-->
+<!--        android:layout_height="197dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:srcCompat="@drawable/add_images"/>-->
+
+    <EditText
+        android:id="@+id/TitleTask"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:paddingStart="10dp"
+        android:textSize="17sp"
+        android:background="@drawable/text_edit"
+        android:layout_below="@id/RL_GR"
+        android:layout_centerHorizontal="true"
+        android:lines="3"
+        android:gravity="left|center"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:hint="Title"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/TextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TitleTask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/text_edit"
+        android:gravity="left|top"
+        android:hint="Text"
+        android:lines="6"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/SendTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextTask"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/text_edit"
+        android:text="Створити завдання"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

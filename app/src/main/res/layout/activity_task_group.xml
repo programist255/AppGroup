@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b8e6"
+    tools:context=".TaskGroupActivity">
+
+    <RelativeLayout
+        android:id="@+id/RL_GR"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/B_Back_to_group1"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/homeAsUpIndicator" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageGroups1"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/B_Back_to_group1"
+            android:src="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:id="@+id/RL_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageGroups1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/nameGroups1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="17sp"
+                android:text="NameGroup" />
+
+            <TextView
+                android:id="@+id/size_group1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:text="size group" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Add_Task"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:drawable/ic_menu_add"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#85000000" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listGroupTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/chat_group"
+        android:layout_below="@id/RL_GR"/>
+
+</RelativeLayout>

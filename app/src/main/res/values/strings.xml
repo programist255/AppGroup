@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Group App</string>
+    <string name="B_Login_Exit">Вхід</string>
+    <string name="B_L_Register">Реєстрація</string>
+    <string name="ET_L_Password">Password</string>
+    <string name="ET_Login_Login">Login</string>
+    <string name="TV_Login_Autorization">Авторизація</string>
+    <string name="TV_Gegister_Register">Реєстрація</string>
+    <string name="TV_Register_First_Name">First Name</string>
+    <string name="ET_Register_Name">Name</string>
+    <string name="ET_Register_Login">Login</string>
+    <string name="ET_Register_Password">Password</string>
+    <string name="B_Register_Register">Реєстрація</string>
+    <string name="B_Register_Exit">Вхід</string>
+    <string name="ET_Main_Ac_Search_Group">search group</string>
+    <string name="B_Main_Ac_New_Group">Створити групу</string>
+</resources>

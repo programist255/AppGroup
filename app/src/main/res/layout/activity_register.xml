@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b8e6"
+    android:paddingLeft="16dp"
+    android:paddingTop="106dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/TV_Gegister_Register"
+        android:textColor="#CC000000"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/FN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/FirstName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/text_edit"
+            android:gravity="center"
+            android:hint="@string/TV_Register_First_Name"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/N"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_edit"
+            android:gravity="center"
+            android:hint="@string/ET_Register_Name"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/N"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/Login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_edit"
+            android:gravity="center"
+            android:hint="@string/ET_Register_Login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/text_edit"
+            android:gravity="center"
+            android:hint="@string/ET_Register_Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/B_Register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_edit"
+        android:text="@string/B_Register_Register"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/Log"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/B_Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_edit"
+        android:text="@string/B_Register_Exit"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+</RelativeLayout>

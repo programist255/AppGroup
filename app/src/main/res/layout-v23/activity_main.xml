@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="6dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="#00b8e6"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/GL"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/text_search_group"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_edit"
+            android:paddingStart="10dp"
+            android:layout_toStartOf="@id/search_group"
+            android:hint="search group"
+            android:lines="1"
+            android:scrollbars="vertical"
+            android:maxHeight="48dp"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry" />
+        <Button
+            android:id="@+id/search_group"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_edit"
+            android:layout_alignParentEnd="true"
+            android:foreground="@android:drawable/ic_menu_search"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ib_add_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/text_edit"
+        android:drawableStart="@mipmap/ic_launcher_group2_foreground"
+        android:gravity="fill"
+        android:text="Створити групу"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ib_add_group"
+        android:background="#85000000"
+        android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            tools:listitem="@layout/add_group"/>
+</RelativeLayout>

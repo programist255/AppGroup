@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupActivity"
+    android:background="#00b8e6"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/RL_GR"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/B_Back_to_group"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:id="@+id/nameGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:text="NameGroup" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#85000000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageGroup"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RL_GR"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:gravity="left"
+        android:layout_below="@+id/imageGroup"
+        android:text="Куратор: Кулик Михайло"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_size_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="10 учасників" />
+
+    <Button
+        android:id="@+id/users_group_chat"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_edit"
+        android:layout_below="@+id/imageGroup"
+        android:textAllCaps="false"
+        android:text="Чат" />
+
+    <Button
+        android:id="@+id/B_Task_Group"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_edit"
+        android:layout_below="@+id/users_group_chat"
+        android:textAllCaps="false"
+        android:text="Завдання" />
+
+    <Button
+        android:id="@+id/B_Exit_Group"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_edit"
+        android:layout_below="@+id/B_Task_Group"
+        android:textAllCaps="false"
+        android:text="Вийти" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b8e6"
+    tools:context=".NewGroupActivity">
+
+    <RelativeLayout
+        android:id="@+id/RL_GR"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/B_Back_to_group2"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:background="?attr/homeAsUpIndicator" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageGroup"
+        android:layout_width="200dp"
+        android:layout_height="178dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|start"
+
+        android:layout_marginTop="36dp"
+        android:src="@drawable/add_images" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameGroup"
+        android:layout_below="@+id/imageGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+
+    <EditText
+        android:id="@+id/nameGroup"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_edit"
+        android:hint="Name group"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PassGroup"
+        android:layout_below="@+id/NameGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    <EditText
+        android:id="@+id/passGroup"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="Password for group"
+        android:gravity="center"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addNewGroup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/PassGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/text_edit"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:text="Створити" />
+</RelativeLayout>
