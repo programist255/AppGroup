@@ -1,7 +1,7 @@
 package com.example.myapplication.Pag;
 
 public class Conctans {
-    private static final String ROOT_URL = "http://192.168.0.102/Android/v1/";
+    private static final String ROOT_URL = "v1\\";
 
     public static final String URL_REGISTER = ROOT_URL + "registerUser.php";
 
